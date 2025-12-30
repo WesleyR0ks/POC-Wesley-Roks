@@ -10,8 +10,6 @@ def check_email():
     try:
         result = predict_email(email_text)
     except Exception as e:
-        # Optionally log the error for debugging:
-        # print(f"Error during email prediction: {e}")
         result_label.config(
             text="An error occurred while analyzing the email. Please try again later.",
             fg="orange",
