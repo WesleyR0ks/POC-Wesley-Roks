@@ -5,4 +5,65 @@ text,label
 "Meeting agenda for tomorrow attached",legitimate
 "Invoice for your recent purchase",legitimate
 "Can we reschedule our meeting?",legitimate
-
+"Security alert Your account was accessed from a new device. Verify now",phishing
+"Final notice Your mailbox is almost full. Upgrade your storage today",phishing
+"We could not deliver your package. Provide your billing details to reschedule",phishing
+"Your tax refund is ready. Submit your bank details to receive funds",phishing
+"Action required Your account will be closed in 24 hours unless you confirm",phishing
+"Unusual sign in attempt detected. Confirm your identity immediately",phishing
+"You have won a free vacation. Claim your reward before it expires",phishing
+"Important payroll update View the attached document to avoid delays",phishing
+"Exclusive investment opportunity Double your money in one week",phishing
+"Your email password expires today. Click to keep your account active",phishing
+"We have locked your account due to suspicious activity. Login to restore access",phishing
+"Pending payment detected. Log in to verify this transaction",phishing
+"Your bank account is temporarily suspended. Confirm your details to reactivate",phishing
+"You have received a secure document. Log in with your credentials to open it",phishing
+"Claim your free gift card before it is too late",phishing
+"Important notice regarding your credit score. View report now",phishing
+"Corporate mailbox upgrade required. Click here to migrate your messages",phishing
+"Your device is infected. Download the attached antivirus tool immediately",phishing
+"We noticed problems with your payment method. Update your card information",phishing
+"Your subscription has been cancelled. Sign in to keep your benefits",phishing
+"You have an unclaimed wire transfer. Provide account details to receive funds",phishing
+"Confirm your identity to avoid restrictions on your online banking",phishing
+"We could not verify your billing address. Follow this link to update it",phishing
+"You have new voicemail messages. Log in online to listen",phishing
+"Your company email will be deactivated. Click here to keep your access",phishing
+"Password reset requested. If this was not you click here to secure your account",phishing
+"You are one of the lucky winners Open the attached file to see your prize",phishing
+"Your cloud storage has reached its limit. Login to increase your quota",phishing
+"Verify your account to receive pending secure messages",phishing
+"Board meeting minutes from last week",legitimate
+"Weekly project status update and next steps",legitimate
+"Reminder Team lunch on Friday at noon",legitimate
+"Flight itinerary and booking confirmation attached",legitimate
+"Your subscription receipt for this month",legitimate
+"Welcome to the service Here are some tips to get started",legitimate
+"Password successfully changed If this was not you contact support",legitimate
+"Your order has shipped Track your package using this link",legitimate
+"Calendar invite Quarterly performance review",legitimate
+"Notes from today workshop",legitimate
+"Thank you for attending our webinar Here is the recording",legitimate
+"Your account statement is now available in the portal",legitimate
+"Reminder Timesheet submission due today",legitimate
+"Follow up on our call earlier this week",legitimate
+"Updated proposal attached for your review",legitimate
+"Welcome aboard Here is your onboarding checklist",legitimate
+"Office will be closed on Monday for a public holiday",legitimate
+"Your password reset request was processed successfully",legitimate
+"Agenda and materials for tomorrow training session",legitimate
+"Confirmation of your support ticket",legitimate
+"Schedule for upcoming maintenance window",legitimate
+"Request for feedback on our recent support interaction",legitimate
+"Changes to our privacy policy and terms of service",legitimate
+"Invitation to complete your annual compliance training",legitimate
+"Team meeting moved to 3 PM Please update your calendars",legitimate
+"Updated invoice reflecting the agreed discount",legitimate
+"Please review and sign the attached contract",legitimate
+"Minutes from the quarterly planning meeting",legitimate
+"Daily system health report for your servers",legitimate
+"Instructions for accessing the new internal dashboard",legitimate
+"Lunch and learn session next week Topics attached",legitimate
+"Your account has been updated per your recent request",legitimate
+"Travel reimbursement form and submission guidelines",legitimate
