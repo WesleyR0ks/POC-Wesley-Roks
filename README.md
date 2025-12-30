@@ -3,12 +3,12 @@
 ## Phishing Email Detection – Proof of Concept
 
 ### Overview
-This repository contains a **Proof of Concept (PoC)** for detecting phishing emails using **Supervised Machine Learning** and **Natural Language Processing (NLP)**.
+This repository contains a Proof of Concept (PoC) for detecting phishing emails using Supervised Machine Learning and Natural Language Processing (NLP).
 
 The PoC demonstrates:
 - How email content can be automatically analyzed
-- How a machine learning model can classify emails as **phishing** or **legitimate**
-- A clear application of the **Trainer–Predictor design pattern**
+- How a machine learning model can classify emails as phishing or legitimate
+- A clear application of the Trainer–Predictor design pattern
 - A simple graphical user interface where users can paste email content and receive a classification result
 
 This PoC was created as part of a comparative analysis of machine learning components and design patterns, with phishing detection as the primary use case.
@@ -21,24 +21,24 @@ The goal of this Proof of Concept is to:
 - Show a working end-to-end ML pipeline (training → prediction → user interaction)
 - Demonstrate practical ML skills in a realistic but manageable scope
 
-The system focuses on **text-based email analysis**, using NLP techniques to extract features from email content.
+The system focuses on text-based email analysis, using NLP techniques to extract features from email content.
 
 ---
 
 ### Machine Learning Approach
 
 #### Supervised Learning
-The PoC uses **supervised learning**, where the model is trained on labeled examples:
+The PoC uses supervised learning, where the model is trained on labeled examples:
 - `phishing`
 - `legitimate`
 
-Each email is transformed into numerical features using **TF-IDF vectorization**, after which a classifier predicts the label.
+Each email is transformed into numerical features using TF-IDF vectorization, after which a classifier predicts the label.
 
 ---
 
 ### Why Logistic Regression Instead of XGBoost?
 
-During the analysis phase, **XGBoost** was identified as the most suitable model for phishing detection due to its:
+During the analysis phase, XGBoost was identified as the most suitable model for phishing detection due to its:
 - High accuracy
 - Robustness
 - Good performance on large datasets
@@ -79,7 +79,7 @@ This guarantees consistent feature generation and prevents training–prediction
 ---
 
 ### User Interface
-The PoC includes a **simple desktop GUI** built with Tkinter:
+The PoC includes a simple desktop GUI built with Tkinter:
 - Users paste an email into a text box
 - The system classifies the email
 - The result is shown as PHISHING or LEGITIMATE
@@ -94,6 +94,103 @@ This PoC is intentionally simple and has some known limitations:
 - No confidence score shown to the user
 - UI is functional but basic
 - No persistence or logging of predictions
+
+---
+
+### How to Run the Proof of Concept
+
+This PoC consists of two main steps:
+
+1. Training the machine learning model
+2. Running the graphical user interface (GUI)
+
+#### Prerequisites
+Make sure the following software is installed:
+- Python 3.10 or higher
+- pip (Python package manager)
+
+Verify installation:
+```bash
+python --version
+pip --version
+```
+
+#### Install Required Libraries
+
+All required dependencies are listed in `requirements.txt`.
+
+From the project root directory, run:
+
+```bash
+pip install -r requirements.txt
+```
+
+
+#### Train the Machine Learning Model
+
+Before the application can classify emails, the model must be trained.
+
+Navigate to the `model` directory:
+
+```bash
+cd model
+```
+
+#### Run the training script:
+```bash
+cd ..
+cd ui
+python app.py
+```
+
+This will open a window where you can:
+
+- Paste the content of an email
+- Click Check Email
+- See whether the email is classified as PHISHING or LEGITIMATE
+
+---
+
+#### Example Test Email
+
+You can test the system using the following email:
+
+```text
+Urgent action required!
+
+Your account has been compromised.
+Click the link below to verify your identity immediately.
+
+Security Team
+```
+
+
+Expected result: `PHISHING`
+
+---
+
+#### Common Issues
+
+**The application says everything is legitimate**
+
+- Make sure `trainer.py` has been run successfully
+- Ensure the dataset contains both phishing and legitimate emails
+- Confirm that `phishing_model.pkl` and `vectorizer.pkl` exist
+
+**The window does not open**
+
+- Check if Tkinter is installed
+- Verify that you are running `python ui/app.py` from the project root
+
+---
+
+### Quick Run Summary
+
+| Step                  | Command                        |
+|-----------------------|--------------------------------|
+| Install dependencies  | `pip install -r requirements.txt`|
+| Train model           | `cd model` → `python trainer.py` |
+| Run UI                | `cd ui/` → `python app.py`       |
 
 ---
 
